@@ -29,9 +29,9 @@ int main(int argc, const char * argv[]) {
     cout << "Time:";
     cin >> m;
 
-    w = (km*1000)/(m*60);
+    w = (km * 1000) / (m * 60);
 
-    cout << (int)w << "m/s or " << (int)(w*60/1000) << "km/h\n";
+    cout << (int)w << "m/s or " << (int)(w * 60 / 1000) << "km/h\n";
     
     //3
     int sec;
@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
     cout << "time from start working day(in seconds): ";
     cin >> sec;
 
-    t = (8*60*60) - sec;
+    t = (8 * 60 * 60) - sec;
 
     if (t < 0)
     {
@@ -63,7 +63,7 @@ int main(int argc, const char * argv[]) {
     cout << "Discount(%): ";
     cin >> disc;
 
-    cout << (prc*n) - ((prc*n)/100*disc) << "\n";
+    cout << (prc*n) - ((prc * n) / 100 * disc) << "\n";
     
     //5
     float mov;
@@ -76,11 +76,11 @@ int main(int argc, const char * argv[]) {
     cout << "Speed of your internet(MB per second): ";
     cin >> w;
     
-    res = mov*1024/w;
+    res = mov * 1024 / w;
     
-    hour = res/60/60;
-    min = (res - (hour*3600))/60;
-    sec = res - (hour*3600 + min*60);
+    hour = res / 60 / 60;
+    min = (res - (hour * 3600)) / 60;
+    sec = res - (hour * 3600 + min * 60);
     
     cout << "Download will continue: " << hour << " hours, " << min << " minutes and " << sec << " second\n";
 

@@ -109,6 +109,7 @@ int main(int argc, const char * argv[]) {
             cout << "Continue?(1 - yea; 2 - no): ";
             cin >> lg;
         }
+        if (lg == 1) main();
     }
     if (lg == 2){
         cout << "Bye!";

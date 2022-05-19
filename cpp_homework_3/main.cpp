@@ -12,7 +12,7 @@ int main(int argc, const char * argv[]) {
 
     setlocale(LC_ALL, "English");
     
-    cout <<   "\n   Task 1\n";
+//Task 1
     
     cout << "   ----------------------------- ";
     cout << "  | 10:35:52                    |";
@@ -29,7 +29,7 @@ int main(int argc, const char * argv[]) {
     cout << "  |   2   3   4   5   6   7   8 |";
     cout << "   ----------------------------- \n";
     
-    cout <<  "\n   Task 2\n";
+//Task 2
     
     cout <<"                    Me and my sister                     ";
     cout <<"                      /      \\                          ";
@@ -41,7 +41,7 @@ int main(int argc, const char * argv[]) {
     cout <<"              /     \\          /      \\                ";
     cout <<"  My grandmother  My grandpa My grandpa My grandmother \n";
     
-    cout <<"\n   Task 3\n";
+//Task 3
     
     cout << "      *********    **      **    *********    ***       *******       ";
     cout << "      *********    **      **    *********    ***      ****    *      ";

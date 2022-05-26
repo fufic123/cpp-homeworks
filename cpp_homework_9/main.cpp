@@ -31,7 +31,7 @@ int main(int argc, const char * argv[]) {
 
     res = ((l * h * w) - (l * h * w)*m/100)/n*r;
 
-    cout << "res";
+    cout << res;
 
     //Task 2 (minimum number)
     float a,b,c;

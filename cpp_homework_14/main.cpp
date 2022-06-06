@@ -18,8 +18,7 @@ int main(int argc, const char * argv[]) {
     cout << "Range: ";
     cin >> st >> end;
 
-    while (st <= end)
-    {
+    while (st <= end) {
         f = (st * 1.8) + 32;
         cout << st << "\t\t" << f << "\n";
         st++;
@@ -33,8 +32,7 @@ int main(int argc, const char * argv[]) {
     cout << "Your number: ";
     cin >> n;
 
-    while (n != 0)
-    {
+    while (n != 0) {
         a = n % 10;
         rn = rn * 10 + a;
         n /= 10;
@@ -49,8 +47,7 @@ int main(int argc, const char * argv[]) {
     cin >> num;
 
     a = num;
-    while (a != 0)
-    {
+    while (a != 0) {
         if (num % a == 0)
         {
             cout << a << " ";

@@ -9,8 +9,7 @@
 #include <math.h>
 
 using namespace std;
-int main()
-{
+int main(int argc, const char * argv[]) {
     int dhp, dd, shp, sd, ns;
 
     cout << "                                " << "\n";

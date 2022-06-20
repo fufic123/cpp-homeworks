@@ -8,9 +8,7 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
-int main()
-{
+int main(int argc, const char * argv[]) {
 
     //TASK 1
     for (int i = 1; i <= 9; i++) {

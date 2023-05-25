@@ -2,39 +2,40 @@
 #include <map>
 #include "Student.hpp"
 
+using namespace std;
 int main() {
 	// 1st task
-	std::map<std::string, float> students;
+	map<string, float> students;
 	for (int i = 0; i < 5; i++) {
-		std::string tmp1;
+		string tmp1;
 		float tmp2;
-		std::cout << "Enter name >> ";
-		std::cin >> tmp1;
-		std::cout << "Enter average mark >> ";
-		std::cin >> tmp2;
-		students.insert(std::make_pair(tmp1, tmp2));
+		cout << "Enter name >> ";
+		cin >> tmp1;
+		cout << "Enter average mark >> ";
+		cin >> tmp2;
+		students.insert(make_pair(tmp1, tmp2));
 	}
-	for (const auto& elem : students) std::cout << "Name: " << elem.first << std::endl << "Average mark: " << elem.second << std::endl;
+	for (const auto& el : students) cout << "Name: " << el.first << endl << "Average mark: " << el.second << endl;
 
 	// 2nd task
-	std::map<Student, float> students2;
+	map<Student, float> s2;
 	for (int i = 0; i < 5; i++) {
 		Student tmp1;
 		float tmp2;
-		std::cin >> tmp1;
-		std::cout << "Enter average mark >> ";
-		std::cin >> tmp2;
-		students2.insert(std::make_pair(tmp1, tmp2));
+		cin >> tmp1;
+		cout << "Enter average mark >> ";
+		cin >> tmp2;
+		s2.insert(make_pair(tmp1, tmp2));
 	}
-	for (const auto& elem : students2) std::cout << elem.first << std::endl << "Average mark: " << elem.second << std::endl;
+	for (const auto& el : s2) cout << el.first << endl << "Average mark: " << el.second << endl;
 
-	std::string searchName;
+	string searchName;
 	int searchAge;
-	std::cout << "Enter name to search >> ";
-	std::cin >> searchName;
-	std::cout << "Enter age to search >> ";
-	std::cin >> searchAge;
-	auto searchResult = students2.find(Student(searchName, searchAge));
-	if (searchResult != students2.end()) std::cout << "Student found! " << std::endl;
-	else std::cout << "Student not found! " << std::endl;
+	cout << "Enter name to search >> ";
+	cin >> searchName;
+	cout << "Enter age to search >> ";
+	cin >> searchAge;
+	auto searchResult = s2.find(Student(searchName, searchAge));
+	if (searchResult != s2.end()) cout << "Student found! " << endl;
+	else cout << "Student not found! " << endl;
 }

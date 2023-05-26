@@ -34,7 +34,7 @@ void Card::Show() {
 
 vector<Expense> Card::getExpensesByCategory(Category category) {
 	vector<Expense> tmp;
-	for (int i = 0; i < Expenses.size(); i++) if (Expenses[i].GetExpenseCategory() == category) tmp.push_back(Expenses[i]);
+	for (int i = 0; i < Expenses.size(); i++) if (Expenses[i].GetECategory() == category) tmp.push_back(Expenses[i]);
 	return tmp;
 }
 

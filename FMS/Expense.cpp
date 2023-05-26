@@ -8,16 +8,16 @@ Expense::Expense(double EAmount, string ExpenseCategoryName, double ExpenseCateg
 	EAmount(EAmount), ECategory(Category(ExpenseCategoryName, ExpenseCategoryCashback)), EDate(Date(day, month, year)), ETime(Time(seconds, minutes, hours)) {}
 
 double Expense::GetEAmount() const { return EAmount; }
-Category Expense::GetExpenseCategory() const { return ECategory; }
-Date Expense::GetExpenseDate() const { return EDate; }
-Time Expense::GetExpenseTime() const { return ETime; }
+Category Expense::GetECategory() const { return ECategory; }
+Date Expense::GetEDate() const { return EDate; }
+Time Expense::GetETime() const { return ETime; }
 
 string Expense::toString() { return "Expense: \nAmount: " + to_string(EAmount) + "\nCategory: " + ECategory.toString() + "\nDate: " + EDate.toString() + "\nTime: " + ETime.toString(); }
 
 void Expense::SetEAmount(double EAmount) { this->EAmount = EAmount; }
-void Expense::SetExpenseCategory(Category ECategory) { this->ECategory = ECategory; }
-void Expense::SetExpenseDate(Date EDate) { this->EDate = EDate; }
-void Expense::SetExpenseTime(Time ETime) { this->ETime = ETime; }
+void Expense::SetECategory(Category ECategory) { this->ECategory = ECategory; }
+void Expense::SetEDate(Date EDate) { this->EDate = EDate; }
+void Expense::SetETime(Time ETime) { this->ETime = ETime; }
 
 bool Expense::operator < (const Expense& e) const { return EAmount < e.EAmount; }
 bool Expense::operator > (const Expense& e) const { return EAmount > e.EAmount; }

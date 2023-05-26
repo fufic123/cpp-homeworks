@@ -1,4 +1,4 @@
-#pragma once
+s#pragma once
 #include <iostream>
 #include <string>
 #include "Date.hpp"
@@ -19,14 +19,14 @@ public:
 	Expense(double EAmount, Category ECategory, Date EDate, Time ETime);
 	Expense(double EAmount, string ExpenseCategoryName, double ExpenseCategoryCashback, unsigned short day, unsigned short month, unsigned short year, unsigned short seconds, unsigned short minutes, unsigned short hours);
 
-	double GetExpenseAmount() const;
+	double GetEAmount() const;
 	Category GetExpenseCategory() const;
 	Date GetExpenseDate() const;
 	Time GetExpenseTime() const;
 
 	string toString();
 
-	void SetExpenseAmount(double EAmount);
+	void SetEAmount(double EAmount);
 	void SetExpenseCategory(Category ECategory);
 	void SetExpenseDate(Date EDate);
 	void SetExpenseTime(Time ETime);

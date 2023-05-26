@@ -138,7 +138,7 @@ void addexpense(User* user)
 	cout << "-----------------------------" << "\n";
 	system("cls");
 	cout << "Wait 2 seconds, please :)" << "\n";
-	user->Withdraw(tmp.GetExpenseAmount(), tmp.GetExpenseCategory(), tmp.GetExpenseDate(), tmp.GetExpenseTime());
+	user->Withdraw(tmp.GetEAmount(), tmp.GetECategory(), tmp.GetEDate(), tmp.GetETime());
 	Sleep(2000);
 }
 

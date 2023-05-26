@@ -87,7 +87,7 @@ int list(vector<User*>& accounts)
 		cout << i + 1 << ".";
 		accounts[i]->Show();
 	}
-	cout << "Enter your c (to exit enter 0): ";
+	cout << "Enter your choice (to exit enter 0): ";
 	cin >> c;
 	return c;
 }
@@ -99,7 +99,7 @@ int actions(vector<User*>& accounts, int number)
 	cout << "FMS" << "\n";
 	cout << "-----------------------------" << "\n";
 	accounts[number - 1]->Show();
-	cout << "What you want to do?" << "\n";
+	cout << "What do you want to do?" << "\n";
 	cout << "-----------------------------" << "\n";
 	cout << "1. Replenishment" << "\n";
 	cout << "2. Add expense" << "\n";

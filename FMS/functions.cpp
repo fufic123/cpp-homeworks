@@ -13,7 +13,7 @@ int menu()
 	cout << "2. Add new card" << "\n";
 	cout << "3. Exit" << "\n";
 	cout << "-----------------------------" << "\n";
-	cout << "Your c:  ";
+	cout << "Your choice:  ";
 	cin >> c;
 	return c;
 }
@@ -30,7 +30,7 @@ int add()
 	cout << "2. Wallet" << "\n";
 	cout << "3. Exit" << "\n";
 	cout << "-----------------------------" << "\n";
-	cout << "Your choise: ";
+	cout << "Your choice: ";
 	cin >> c;
 	return c;
 }

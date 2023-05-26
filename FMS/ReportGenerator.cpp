@@ -3,7 +3,7 @@
 using namespace std;
 
 ReportGenerator::ReportGenerator() {}
-map<Date, vector<Expense>> ReportGenerator::generateDayReport(Date date, vector<Account*>& accounts) 
+map<Date, vector<Expense>> ReportGenerator::generateDayReport(Date date, vector<User*>& accounts) 
 {
 	vector<Expense> report;
 	int count = report.size();
@@ -29,13 +29,13 @@ map<Date, vector<Expense>> ReportGenerator::generateDayReport(Date date, vector<
 	return resoltReport;
 }
 
-map<Date, vector<Expense>> ReportGenerator::generateWeekReport(Date date, vector<Account*>& accounts) 
+map<Date, vector<Expense>> ReportGenerator::generateWeekReport(Date date, vector<User*>& accounts) 
 {
 	vector<Expense> report;
 	int count = report.size();
 	for (int i = 0; i < accounts.size(); i++) {
 		for (int j = 0; j < accounts[i]->getAllExpenses().size(); j++) {
-			if ((accounts[i]->getAllExpenses()[j].GetEDate() > date - 8) || (accounts[i]->getAllExpenses()[j].GetExpenseDate() < date)) {
+			if ((accounts[i]->getAllExpenses()[j].GetEDate() > date - 8) || (accounts[i]->getAllExpenses()[j].GetEDate() < date)) {
 				report.push_back(accounts[i]->getAllExpenses()[j]);
 			}
 		}
@@ -55,7 +55,7 @@ map<Date, vector<Expense>> ReportGenerator::generateWeekReport(Date date, vector
 	return resoltReport;
 }
 
-map<Date, vector<Expense>> ReportGenerator::generateMonthReport(Date date, vector<Account*>& accounts) 
+map<Date, vector<Expense>> ReportGenerator::generateMonthReport(Date date, vector<User*>& accounts) 
 {
 	vector<Expense> report;
 	int count = report.size();

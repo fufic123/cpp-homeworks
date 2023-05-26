@@ -123,7 +123,7 @@ void replenishment(User* user)
 	cout << "Enter amount >> ";
 	cin >> sum;
 	system("cls");
-	cout << "Wait 2 seconds, please :)" << "\n";
+	cout << "Wait 2 seconds" << "\n";
 	user->Deposit(sum);
 	Sleep(2000);
 }
@@ -137,7 +137,7 @@ void addexpense(User* user)
 	cin >> tmp;
 	cout << "-----------------------------" << "\n";
 	system("cls");
-	cout << "Wait 2 seconds, please :)" << "\n";
+	cout << "Wait 2 seconds" << "\n";
 	user->Withdraw(tmp.GetEAmount(), tmp.GetECategory(), tmp.GetEDate(), tmp.GetETime());
 	Sleep(2000);
 }

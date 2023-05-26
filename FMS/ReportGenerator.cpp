@@ -9,7 +9,7 @@ map<Date, vector<Expense>> ReportGenerator::generateDayReport(Date date, vector<
 	int count = report.size();
 	for (int i = 0; i < accounts.size(); i++) {
 		for (int j = 0; j < accounts[i]->getAllExpenses().size(); j++) {
-			if (accounts[i]->getAllExpenses()[j].GetExpenseDate() == date) {
+			if (accounts[i]->getAllExpenses()[j].GetEDate() == date) {
 				report.push_back(accounts[i]->getAllExpenses()[j]);
 			}
 		}
@@ -35,7 +35,7 @@ map<Date, vector<Expense>> ReportGenerator::generateWeekReport(Date date, vector
 	int count = report.size();
 	for (int i = 0; i < accounts.size(); i++) {
 		for (int j = 0; j < accounts[i]->getAllExpenses().size(); j++) {
-			if ((accounts[i]->getAllExpenses()[j].GetExpenseDate() > date - 8) || (accounts[i]->getAllExpenses()[j].GetExpenseDate() < date)) {
+			if ((accounts[i]->getAllExpenses()[j].GetEDate() > date - 8) || (accounts[i]->getAllExpenses()[j].GetExpenseDate() < date)) {
 				report.push_back(accounts[i]->getAllExpenses()[j]);
 			}
 		}
@@ -61,8 +61,8 @@ map<Date, vector<Expense>> ReportGenerator::generateMonthReport(Date date, vecto
 	int count = report.size();
 	for (int i = 0; i < accounts.size(); i++) {
 		for (int j = 0; j < accounts[i]->getAllExpenses().size(); j++) {
-			if (accounts[i]->getAllExpenses()[j].GetExpenseDate().GetMonth() == date.GetMonth() &&
-				accounts[i]->getAllExpenses()[j].GetExpenseDate().GetYear() == date.GetYear()) {
+			if (accounts[i]->getAllExpenses()[j].GetEDate().GetMonth() == date.GetMonth() &&
+				accounts[i]->getAllExpenses()[j].GetEDate().GetYear() == date.GetYear()) {
 				report.push_back(accounts[i]->getAllExpenses()[j]);
 			}
 		}

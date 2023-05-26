@@ -58,7 +58,7 @@ istream& operator >> (istream& i, Card& c) {
 	i.ignore(numeric_limits<streamsize>::max(), '\n');
 	getline(i, c.Holder);
 
-	cout << " User number >> ";
+	cout << " User card number >> ";
 	getline(i, c.Number);
 
 	cout << " Balance >> ";

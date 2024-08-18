@@ -1,2 +1,2 @@
-# cpp-homeworks
- all my c++ homeworks
+# cpp-homeworks and Financial Management System
+ all my c++ homeworks with course work
